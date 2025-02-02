@@ -1,0 +1,180 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #121212;  /* Dark background */
+    color: #e0e0e0;  /* Light text for contrast */
+    line-height: 1.6;
+    padding: 40px 10%;
+    min-height: 100vh;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #1e1e1e;  /* Dark container */
+    border-radius: 8px;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+    padding: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.container:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Header */
+header {
+    background: linear-gradient(45deg, #2c2c2c, #1a1a1a);  /* Dark gradient */
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+/* Section Styling */
+section {
+    margin-top: 40px;
+}
+
+/* Challenge Names */
+.challenge-details h2 {
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #ffffff;  /* White color for challenge names */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Paragraph Text */
+p {
+    font-size: 1.1rem;
+    color: #bbb;  /* Softer text color for the paragraph */
+    line-height: 1.8;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* List Styling */
+ul {
+    list-style-type: none;
+    margin: 20px 0;
+}
+
+ul li {
+    font-size: 1.1rem;
+    color: #e0e0e0;  /* Light text */
+    margin-bottom: 15px;
+    padding-left: 25px;
+    position: relative;
+}
+
+ul li:before {
+    content: "•";
+    font-size: 1.5rem;
+    color: #4f4f4f;  /* Subtle accent color for list bullets */
+    position: absolute;
+    left: 0;
+}
+
+/* Image Styling */
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background: #1e1e1e;
+    color: #bbb;
+    padding: 30px 0;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 -6px 10px rgba(0, 0, 0, 0.15);
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+/* Remove default hyperlink styles */
+a {
+    color: inherit;  /* Remove blue hyperlink color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Subtle hover effect for links */
+a:hover {
+    color: #a1c4fd;  /* Light blue on hover */
+}
+
+/* Button Styling */
+button {
+    background: #4f94e1;  /* Soft blue button */
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #3d7ccf;  /* Darker blue on hover */
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 40px 20px;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    .challenge-details h2 {
+        font-size: 1.8rem;
+    }
+
+    ul li {
+        font-size: 1rem;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+
+    button {
+        width: 100%;
+    }
+}
